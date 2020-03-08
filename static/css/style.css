@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Product Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans Regular"),
+    url("../fonts/ProductSans-Regular.woff") format("woff");
+}
+
+::selection {
+  background: var(--primary-color-hover);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Product Sans Regular", sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  width: 100%;
+  height: 100vh;
+}
+
+.main-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Navbar */
+.navbar {
+  flex: 1;
+  padding: 0px 20px;
+  font-size: 15px;
+  background-color: var(--bg-primary);
+  padding-bottom: 10px;
+  -webkit-box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+  -moz-box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+}
+.main-nav {
+  list-style-type: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.nav-links span {
+  color: var(--secondary-color);
+  font-family: "Fira Mono", monospace;
+  margin-right: 3px;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-size: 24px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.main-nav.active {
+  display: block;
+}
+
+.logo:hover,
+.nav-links:hover,
+.nav-links.active {
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+/* Navbar In Normal screen >= 768px */
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0px;
+    height: 70px;
+    align-items: center;
+  }
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .main-nav li {
+    margin: 0;
+  }
+  .main-nav a {
+    padding: 0.75rem 0rem;
+    display: inline-block;
+  }
+  .main-nav li:last-child a {
+    padding: 0.75rem 1rem;
+    margin-left: 50px;
+    margin-top: 4px;
+  }
+  .nav-links {
+    margin-left: 40px;
+  }
+  .logo {
+    margin-top: 0;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+main {
+  flex-grow: 1;
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex: 2;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.content.align-center {
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  /* border: 1px solid red; */
+}
+
+.footer {
+  font-family: 'Fira Mono', monospace;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bg-secondary);
+  padding: 30px 0px;
+}
+
+.app-version {
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin-top: 5px;
+  background-color: var(--recessive-color);
+}
+
+.btn {
+  color: var(--primary-color);
+  background-color: transparent;
+  font-size: 14px;
+  font-family: "Fira Mono", monospace;
+  line-height: 1;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--primary-color);
+  border-image: initial;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+}
+
+.btn:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.btn-lg {
+  padding: 1.25rem 1.75rem;
+}
