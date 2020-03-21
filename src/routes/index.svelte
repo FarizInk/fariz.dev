@@ -1,4 +1,16 @@
 <script>
+  import { onMount, onDestroy } from "svelte";
+
+  onMount(() => {
+    console.log("Mount: Home");
+  });
+
+  onDestroy(() => {
+    setTimeout(() => {
+      console.log("Destroy: Home");
+    }, 500);
+  });
+
   const APP_NAME = process.env.APP_NAME;
 </script>
 
