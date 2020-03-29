@@ -39,12 +39,42 @@
   .intro .description {
     padding: 20px 0px 50px 0px;
     max-width: 500px;
+    line-height: 1.7;
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 1000px) {
+    .intro .name {
+      font-size: 60px;
+    }
+    .intro .who-iam {
+      font-size: 50px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .intro .name {
+      font-size: 40px;
+    }
+    .intro .who-iam {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .intro .name {
+      font-size: 30px;
+    }
+    .intro .who-iam {
+      font-size: 20px;
+    }
   }
 </style>
 
 <svelte:head>
   <title>Home • Fariz</title>
 </svelte:head>
+
 <div class="content align-center">
   <div class="intro">
     <div class="hello">Hi, my name is</div>

@@ -20,6 +20,7 @@
     :root {
       --bg-primary: #fff;
       --text-primary: #4e4d4d;
+      --text-secondary: #4e4d4d;
       --secondary-color: #8f63de;
       --primary-color: #da20a9;
       --primary-color-hover: rgba(218, 32, 169, 0.07);
@@ -34,6 +35,7 @@
     :root {
       --bg-primary: #0d1430;
       --text-primary: #ffffff;
+      --text-secondary: #a6afd2;
       --secondary-color: #e1475f;
       --primary-color: #00ffda;
       --primary-color-hover: rgba(100, 255, 218, 0.07);

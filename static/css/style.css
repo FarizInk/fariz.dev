@@ -157,19 +157,20 @@ main {
 }
 
 .footer {
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   font-size: 12px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  line-height: 1.4;
   background-color: var(--bg-secondary);
-  padding: 30px 0px;
+  padding: 30px 30px;
 }
 
 .app-version {
   border-radius: 2px;
   padding: 2px 4px;
-  margin-top: 5px;
+  margin-top: 10px;
   background-color: var(--recessive-color);
 }
 
@@ -197,4 +198,11 @@ main {
 
 .btn-lg {
   padding: 1.25rem 1.75rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  .content {
+    padding: 0px 30px;
+  }
 }
