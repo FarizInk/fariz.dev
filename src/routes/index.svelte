@@ -1,5 +1,6 @@
 <script>
   import { onMount, onDestroy } from "svelte";
+  import { fade, fly } from "svelte/transition";
 
   onMount(() => {
     console.log("Mount: Home");
@@ -77,10 +78,12 @@
 
 <div class="content align-center">
   <div class="intro">
-    <div class="hello">Hi, my name is</div>
-    <h1 class="name">Nizar Alfarizi Akbar.</h1>
-    <h2 class="who-iam">Part of the dark energy of space.</h2>
-    <p class="description">
+    <div class="hello" in:fly={{ y:50, duration: 400 }}>
+      Hi, my name is
+    </div>
+    <h1 class="name" in:fly={{ delay: 100, y:50, duration: 400 }}>Nizar Alfarizi Akbar.</h1>
+    <h2 class="who-iam" in:fly={{ delay: 200, y:50, duration: 400 }}>Part of the dark energy of space.</h2>
+    <p class="description" in:fade={{ delay: 400, duration: 400 }}>
       I'm a software engineer based in Sidoarjo, Indonesia specializing in
       Backend Developer, high-quality websites and applications.
     </p>
@@ -88,7 +91,8 @@
       href="mailto:me@fariz.dev"
       target="_blank"
       rel="nofollow noopener noreferrer"
-      class="btn btn-lg">
+      class="btn btn-lg"
+      in:fade={{ delay: 700, duration: 400 }}>
       Get In Touch
     </a>
   </div>

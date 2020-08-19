@@ -1,12 +1,13 @@
 <script>
   import { onMount } from "svelte";
+  import { loop_guard } from "svelte/internal";
   export let segment;
 
   onMount(() => {
     let mainNav = document.getElementById("js-menu");
     let navBarToggle = document.getElementById("js-navbar-toggle");
 
-    navBarToggle.addEventListener("click", function() {
+    navBarToggle.addEventListener("click", function () {
       mainNav.classList.toggle("active");
     });
   });
