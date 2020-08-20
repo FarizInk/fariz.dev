@@ -2,6 +2,11 @@
   import Navbar from "../components/Navbar.svelte";
   import Footer from "../components/Footer.svelte";
   import { onMount, onDestroy } from "svelte";
+  import { fade } from "svelte/transition";
+  import { stores } from "@sapper/app";
+  import PageLoadingBar from "sapper-page-loading-bar/PageLoadingBar.svelte";
+
+  const { preloading } = stores();
 
   onMount(() => {
     console.log("Mount: Layout");
@@ -46,11 +51,14 @@
   </style>
 {/if}
 
+<PageLoadingBar {preloading} />
 
-<div class="main-body">
-  <Navbar {segment} />
-  <main>
-    <slot />
-  </main>
-  <Footer />
-</div>
+{#if !$preloading}
+  <div class="main-body" transition:fade>
+    <Navbar {segment} />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </div>
+{/if}
