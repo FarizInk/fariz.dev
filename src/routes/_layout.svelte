@@ -4,7 +4,7 @@
   import { onMount, onDestroy } from "svelte";
   import { fade } from "svelte/transition";
   import { stores } from "@sapper/app";
-  import PageLoadingBar from "sapper-page-loading-bar/PageLoadingBar.svelte";
+  import PageLoadingBar from "../components/LoadingBar.svelte";
 
   const { preloading } = stores();
 
@@ -56,9 +56,7 @@
 {#if !$preloading}
   <div class="main-body" transition:fade>
     <Navbar {segment} />
-    <main>
-      <slot />
-    </main>
+    <slot />
     <Footer />
   </div>
 {/if}

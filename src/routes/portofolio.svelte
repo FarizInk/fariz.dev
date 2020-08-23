@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>About • Fariz</title>
+  <title>Portofolio • Fariz</title>
 </svelte:head>
 
-<main />
+<main/>

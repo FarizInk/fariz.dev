@@ -25,6 +25,7 @@ body {
 }
 
 .main-body {
+  overflow-y: hidden;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -141,6 +142,14 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.anjayy {
+  overflow-y: hidden;
+  height: calc(100vh - 106px);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .content {

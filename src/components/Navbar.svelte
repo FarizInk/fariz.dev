@@ -28,16 +28,18 @@
     </li>
     <li>
       <a
-        href="/experience"
-        class="nav-links {segment === 'experience' ? 'active' : ''}">
+        href="/portofolio"
+        class="nav-links {segment === 'portofolio' ? 'active' : ''}">
         <span>02.</span>
-        Experience
+        Portofolio
       </a>
     </li>
     <li>
-      <a href="/work" class="nav-links {segment === 'work' ? 'active' : ''}">
+      <a
+        href="/spotify"
+        class="nav-links {segment === 'spotify' ? 'active' : ''}">
         <span>03.</span>
-        Work
+        Spotify
       </a>
     </li>
     <li>
@@ -49,7 +51,7 @@
       </a>
     </li>
     <li>
-      <a href="javascript:void(0)" class="btn">Resume</a>
+      <a href="/" class="btn">Resume</a>
     </li>
   </ul>
 </nav>

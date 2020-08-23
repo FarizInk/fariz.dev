@@ -1,9 +1,11 @@
 <script>
   import { fade, fly } from "svelte/transition";
+  import axios from "axios";
+
 </script>
 
 <svelte:head>
-  <title>About • Fariz</title>
+  <title>Spotify • Fariz</title>
 </svelte:head>
 
 <main />

@@ -69,25 +69,27 @@
   <title>Contact • Fariz</title>
 </svelte:head>
 
-<div class="content align-center">
-  <div class="contact">
-    <div class="wht-nxt" in:fly={{ y:50, duration: 400 }}>04. What's Next?</div>
-    <h2 class="git" in:fly={{ delay: 100, y:50, duration: 400 }}>Get In Touch</h2>
-    <p class="description" in:fade={{ delay: 300, duration: 400 }}>
-      Although I'm not currently looking for freelance opportunities, my inbox
-      <br />
-      is always open. Whether for a potential project or just to say hi, I'll
-      try my best to
-      <br />
-      answer your email!
-    </p>
-    <a
-      href="mailto:me@fariz.dev"
-      target="_blank"
-      rel="nofollow noopener noreferrer"
-      class="btn btn-lg"
-      in:fade={{ delay: 600, duration: 400 }}>
-      Say Hello
-    </a>
+<main>
+  <div class="content align-center">
+    <div class="contact">
+      <div class="wht-nxt" in:fly={{ y:50, duration: 400 }}>04. What's Next?</div>
+      <h2 class="git" in:fly={{ delay: 100, y:50, duration: 400 }}>Get In Touch</h2>
+      <p class="description" in:fade={{ delay: 300, duration: 400 }}>
+        Although I'm not currently looking for freelance opportunities, my inbox
+        <br />
+        is always open. Whether for a potential project or just to say hi, I'll
+        try my best to
+        <br />
+        answer your email!
+      </p>
+      <a
+        href="mailto:me@fariz.dev"
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        class="btn btn-lg"
+        in:fade={{ delay: 600, duration: 400 }}>
+        Say Hello
+      </a>
+    </div>
   </div>
-</div>
+</main>

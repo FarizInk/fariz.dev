@@ -31,7 +31,7 @@
   }
 
   .intro .who-iam {
-    font-size: 70px;
+    font-size: 60px;
     line-height: 1.1;
     color: var(--recessive-color);
     font-weight: bold;
@@ -49,7 +49,7 @@
       font-size: 60px;
     }
     .intro .who-iam {
-      font-size: 50px;
+      font-size: 40px;
     }
   }
 
@@ -76,24 +76,26 @@
   <title>Home • Fariz</title>
 </svelte:head>
 
-<div class="content align-center">
-  <div class="intro">
-    <div class="hello" in:fly={{ y:50, duration: 400 }}>
-      Hi, my name is
+<main>
+  <div class="content align-center">
+    <div class="intro">
+      <div class="hello" in:fly={{ y:50, duration: 400 }}>
+        Hi, my name is
+      </div>
+      <h1 class="name" in:fly={{ delay: 100, y:50, duration: 400 }}>Nizar Alfarizi Akbar.</h1>
+      <h2 class="who-iam" in:fly={{ delay: 200, y:50, duration: 400 }}>Part of the dark energy of Universe.</h2>
+      <p class="description" in:fade={{ delay: 400, duration: 400 }}>
+        I'm a software engineer based in Sidoarjo, Indonesia specializing in
+        Backend Developer, high-quality websites and applications.
+      </p>
+      <a
+        href="mailto:me@fariz.dev"
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        class="btn btn-lg"
+        in:fade={{ delay: 700, duration: 400 }}>
+        Get In Touch
+      </a>
     </div>
-    <h1 class="name" in:fly={{ delay: 100, y:50, duration: 400 }}>Nizar Alfarizi Akbar.</h1>
-    <h2 class="who-iam" in:fly={{ delay: 200, y:50, duration: 400 }}>Part of the dark energy of space.</h2>
-    <p class="description" in:fade={{ delay: 400, duration: 400 }}>
-      I'm a software engineer based in Sidoarjo, Indonesia specializing in
-      Backend Developer, high-quality websites and applications.
-    </p>
-    <a
-      href="mailto:me@fariz.dev"
-      target="_blank"
-      rel="nofollow noopener noreferrer"
-      class="btn btn-lg"
-      in:fade={{ delay: 700, duration: 400 }}>
-      Get In Touch
-    </a>
   </div>
-</div>
+</main>
