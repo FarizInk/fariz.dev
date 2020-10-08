@@ -96,7 +96,6 @@
       })
       .then(function (response) {
         const data = response.data;
-        console.log(data);
         spotifyPlaylist.set(data.items);
       })
       .catch(async function (err) {
