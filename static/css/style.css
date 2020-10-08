@@ -144,14 +144,6 @@ main {
   justify-content: center;
 }
 
-.anjayy {
-  overflow-y: hidden;
-  height: calc(100vh - 106px);
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
 .content {
   display: flex;
   flex: 2;
