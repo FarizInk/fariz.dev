@@ -11,3 +11,4 @@ export const spotifySongTitle = writable({
     url: null
 });
 export const spotifySongArtist = writable([]);
+export const spotifyPlaylist = writable([]);
