@@ -1,7 +1,7 @@
 {
   "name": "fariz-dev",
   "description": "My Personal Website",
-  "version": "0.2-dev",
+  "version": "0.3.0",
   "scripts": {
     "dev": "sapper dev --no-hot",
     "build": "sapper build",
