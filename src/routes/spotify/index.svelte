@@ -101,11 +101,11 @@
   }
 
   .current-playing {
-    flex-grow: 1;
+    /* flex-grow: 1; */
   }
 
   .widget-cp {
-    max-width: 300px;
+    width: 300px;
     margin: 12px;
     background-color: black;
     border-radius: 12px;
@@ -202,15 +202,13 @@
   }
 
   .playlist {
-    flex-grow: 4;
+    flex-grow: 1;
   }
   .widget-playlist {
     margin: 12px;
     width: 100%;
     background-color: black;
     border-radius: 12px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
 
