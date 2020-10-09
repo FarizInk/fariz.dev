@@ -16,6 +16,7 @@
 <nav class="navbar">
   <span class="navbar-toggle" id="js-navbar-toggle">
     <!-- <i class="fas fa-bars" /> -->
+    
     Toggle
   </span>
   <a href="." class="logo">Fariz</a>
@@ -50,8 +51,6 @@
         Contact
       </a>
     </li>
-    <li>
-      <a href="/" class="btn">Resume</a>
-    </li>
+    <li><a href="/" class="btn">Resume</a></li>
   </ul>
 </nav>
